@@ -2,12 +2,11 @@
   "name": "shared-react-component-example",
   "version": "1.0.0",
   "description": "Component library",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "build": "babel src -d build",
     "prepare": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --write src/**/*.{js,ts,tsx}"
+    "prettier": "prettier --write src/**/*.{js,ts,tsx}",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -20,11 +19,19 @@
   },
   "homepage": "https://github.com/dimireme/shared-react-component-example#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "@types/react": "^16.9.35",
+    "react": "^16.13.1",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^12.0.0",
     "prettier": "^2.0.5",
-    "react": "^16.13.1"
+    "rollup": "^2.11.0",
+    "rollup-plugin-html": "^0.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-size-snapshot": "^0.12.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "rollup-plugin-visualizer": "^4.0.4"
   }
 }
