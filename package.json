@@ -1,0 +1,30 @@
+{
+  "name": "shared-react-component-example",
+  "version": "1.0.0",
+  "description": "Component library",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write src/**/*.{js,ts,tsx}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimireme/shared-react-component-example.git"
+  },
+  "author": "Alexander Shadrin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimireme/shared-react-component-example/issues"
+  },
+  "homepage": "https://github.com/dimireme/shared-react-component-example#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1"
+  }
+}
