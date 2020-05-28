@@ -2,7 +2,7 @@
   "name": "shared-react-component-example",
   "version": "1.0.0",
   "description": "Component library",
-  "main": "index.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "prepare": "npm run build",
     "prettier": "prettier --write src/**/*.{js,ts,tsx}",

@@ -9,7 +9,7 @@ import { terser } from 'rollup-plugin-terser';
 export default [
   {
     input: 'src/index.ts',
-    output: [{ file: 'dist/index.r.min.js', format: 'iife' }],
+    output: [{ file: 'dist/index.min.js', format: 'commonjs' }],
     plugins: [
       nodeResolve(), // подключение модулей node
       commonJs(), // подключение модулей commonjs
